@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29020.237
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Potok", "Potok.csproj", "{A823AC62-3B96-4E7F-ACAE-580A23071D3B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A823AC62-3B96-4E7F-ACAE-580A23071D3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A823AC62-3B96-4E7F-ACAE-580A23071D3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A823AC62-3B96-4E7F-ACAE-580A23071D3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A823AC62-3B96-4E7F-ACAE-580A23071D3B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2384599B-FED3-4037-B165-1390589EB4E5}
+	EndGlobalSection
+EndGlobal
