@@ -10,6 +10,7 @@ namespace Potok.Controllers
     {
         public ActionResult Index()
         {
+            //test
             return View();
         }
 
