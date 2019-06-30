@@ -1,8 +1,165 @@
-﻿@{
-//ViewBag.Title = "Home Page";
-}
+﻿<!doctype html>
+<html itemscope itemtype="http://schema.org/WebPage">
+<head itemscope itemtype="http://schema.org/WPHeader">
+    <title itemprop="headline">Поток - сервис для доставки посылок в пригород</title>
+    <meta name="description" itemprop="description" content="">
+    <meta charset="UTF-8" />
+    @Styles.Render("~/Content/home.css")
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+    <ul class="navigation">
+            <li class="nav-item"><a itemprop="url" href="/"><img src="~/Content/img/potok-logo_Монтажная область 1.png"></a></li>
+            <li class="nav-item"><a itemprop="url" href="#kompani">О компании</a></li>
+            <li class="nav-item" itemprop="name"><a itemprop="url" href="#delivery">Транспортным компаниям</a></li>
+            <li class="nav-item"><a itemprop="url" href="#partner">Партнерам</a></li>
+            <li class="nav-item" itemprop="name"><a itemprop="url" href="#contact">Контакты</a></li>
+            <li class="nav-item" itemprop="name"><a itemprop="url" href="#"><span class="blue-but">Регистрация</span></a></li>
+        </ul>
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+    <label for="nav-trigger"></label>
+    <div class="screen1">
+        <div class="top-menu"><span class="phone">Мы всегда рады помочь:  +7(927)-123-00-00</span><a class="top-but" href="">Личный кабинет</a></div>
+        <header class="main-header">
+            <div class="header-wrapper">
+                <a class="logo" href="#"><img src="~/Content/img/potok-logo_Монтажная область 1.png"></a>
+                <nav itemscope itemtype="http://schema.org/SiteNavigationElement">
+                    <ul class="main-menu">
+                        <li class="nav-item"><a itemprop="url" href="#kompani">О компании</a></li>
+                        <li class="nav-item" itemprop="name"><a itemprop="url" href="#delivery">Транспортным компаниям</a></li>
+                        <li class="nav-item"><a itemprop="url" href="#partner">Партнерам</a></li>
+                        <li class="nav-item" itemprop="name"><a itemprop="url" href="#contact">Контакты</a></li>
+                        <li class="nav-item" itemprop="name"><a itemprop="url" class="last js-regForm"><span class="blue-but">Регистрация</span></a></li>
+                    </ul>
+                    @*<input type="checkbox" id="nav-trigger" class="nav-trigger" />*@
+                    <label for="nav-trigger"></label>
+                </nav>
+            </div>
+        </header>
+        @*</nav>*@
+        <div class="col2">
+            <p class="title">Мы делаем мир ближе</p>
+            <p class="descr">Поток – удобный сервис для быстрой доставки посылок в малые населенные пункты</p>
+            <a href="" class="big-button">Подключиться</a>
+        </div>
+        <div class="col2">
+            <img src="~/Content/img/292-01 2.png">
+        </div>
+    </div>
+    <div id="kompani" class="screen2">
+        <h2>Как мы это делаем</h2>
+        <div class="row">
+            <div class="col4">
+                <img src="~/Content/img/icon_Монтажная область 1.png">
+                <p class="z3">Быстрее</p>
+                <p class="opis">Больше не надо ждать пока скопятся посылки до дальних пригородных точек доставки</p>
+            </div>
+            <div class="col4">
+                <img src="~/Content/img/icon-02.png">
+                <p class="z3">Доступнее</p>
+                <p class="opis">Вы сможете доставлять в любой населенный пункт, где есть продуктовый магазин</p>
+            </div>
+            <div class="col4">
+                <img src="~/Content/img/icon-03.png">
+                <p class="z3">Проще</p>
+                <p class="opis">Вам больше не надо думать о водителе, траспорте и ГСМ, это ложиться на партнера</p>
+            </div>
+            <div class="col4">
+                <img src="~/Content/img/icon-04.png">
+                <p class="z3">Безопаснее</p>
+                <p class="opis">Мы работаем лишь с компаниями,  гарантирующими сохранность груза</p>
+            </div>
+        </div>
+        <div class="row o-nas">
+            <div class="col2">
+                <img src="~/Content/img/potok-logo_Монтажная область 1.png">
+            </div>
+            <div class="col2">
+                «Поток» создает новые возможности для транспортной компании в области расширения географии доставки, а наши партнеры получают дополнительные источники доходов от привычных операций.
+            </div>
+        </div>
+        <div class="row">
+            <div id="delivery" class="col2">
+                <h2 style="text-align:left;padding-top:1rem;">Для кого наш сервис</h2>
+                <p>Если ты доставляешь посылки в пригород и тебе приходится ждать пока сформируется минимальный пул отправки, то этот сервис специально для тебя.</p>
+                <p style="padding-bottom:2rem;">Наши партнеры, минимум раз в неделю курсируют в пригородном направлении и готовы помочь вам с доставкой и выдачей ваших посылок получателям.</p>
+                <a href="" class="big-button">Подключиться</a>
+            </div>
+            <div class="col2"><img src="~/Content/img/tp-2.png"></div>
+        </div>
+    </div>
+    <div class="screen3">
+        <div class="row">
+            <div class="col2"><img src="~/Content/img/mg_Монтажная область 1.png"></div>
+            <div class="col2" id="partner">
+                <h2 style="text-align:right;padding-top:1rem;">Кто наши партнеры</h2>
+                <p>Предприниматели, работающие в сфере торговли и услуг на территории малых населенных пунктов. Сотрудничество с «Потоком» - это возможность зарабатывать на обеспечении глобального транспортно-логистического коммерческого товарооборота.</p>
+                <p style="padding-bottom:2rem;">Выдача посылок через Вашу торгово-сервисную точку обеспечивает устойчивый поток клиентов, которые по статистике, получив посылку, в 50% случаев или совершают покупку или пользуются Вашими услугами.  </p>
+                <a href="" class="big-button">Подключиться</a>
+            </div>
+        </div>
+        <div style="text-align:center;" class="row">
+            <p class="title">Если вы все еще думаете</p>
+            <p style="text-align:center; padding-bottom:2rem;">Заключив с нами агентский договор, вы сможете включиться в рабочий процесс в любой момент. «Поток» доступен везде.<br>Начало работы в «Потоке» не требует затрат. Бесплатная установка мобильного приложения и его настройка займут всего несколько минут. <br>Получить / выдать посылку можно с любого устройства - нажмите одну кнопку, и посылка автоматически отображается как полученная / выданная. </p>
+            <p><a href="" class="big-button">Хочу стать партнером</a> <a href="" class="big-button-2">Я транспортная компания</a></p>
+        </div>
+    </div>
+    <footer class="disclaimer" itemscope itemtype="http://schema.org/WPFooter">
+        <div class="main-header">
+            <div class="header-wrapper" id="contact">
+                <a class="logo" href="#"><img src="~/Content/img/potok-logo_Монтажная область 1.png"></a><span class="phone"> +7(927)-123-00-00</span><span class="mail">info@potok.ru</span>
+            </div>
+        </div>
+        @*</nav>*@
+    </footer>
+    @* </div>*@
+    <div id="modal1" class="acount">
+        <div class="phorma">
+            <a href="/"><img class="close" src="~/Content/img/cancel.png"></a>
+            <p class="title">Мы рады вам в нашей команде</p>
+            <p style="text-align:center; padding-bottom:2rem;">Выберите в качестве кого вы хотите присоединится</p>
+            <p><a href="" class="big-button">Хочу стать партнером</a> <a href="" class="big-button-2">Я транспортная компания</a></p>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    $(document).ready(function () {
+        var open_modal = $('.js-regForm');
+        var modal = $('.phorma');
+        var close = $('.close, #modal1');
+        var overlay = $('#modal1');
 
-
-<div class="row">
-   <button></button>
-</div>
+        open_modal.click(function (event) {           
+            event.preventDefault();
+            var div = $(this).attr('href');
+            overlay.fadeIn(400,
+                function () {
+                    $(div)
+                        .css('display', 'inline-flex')
+                        .animate({ opacity: 1, top: '50%' }, 200);
+                });
+        });
+        close.click(function () {
+            modal
+                .animate({ opacity: 0, top: '45%' }, 200,
+                    function () {
+                        $(this).css('display', 'none');
+                        overlay.fadeOut(400);
+                    }
+                );
+        });
+        $(document).on('af_complete', function (event, response) {
+            if (response.success) {
+                modal
+                    .animate({ opacity: 0, top: '45%' }, 500,
+                        function () {
+                            $(this).css('display', 'none');
+                            overlay.fadeOut(400);
+                        }
+                    );
+            }
+        });
+    });
+</script>

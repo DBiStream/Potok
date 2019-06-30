@@ -15,16 +15,6 @@ namespace Potok.Controllers
     {
         public ActionResult Index()
         {
-            //test
-            using (IDbConnection db = new SqlConnection(ConfigurationManager.ConnectionStrings["PotokConnectionString"].ConnectionString))
-            {
-                List<Address> address = db.Query<Address>("select * from dbo.AddressCustom").ToList();
-            }
-
-            return View();
-        }
-
-        public ActionResult Test() {
             return View();
         }
     }
